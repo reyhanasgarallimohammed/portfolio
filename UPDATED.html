@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Reyhan Mohammed</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: #222;
+      text-align: center; /* Center all text globally */
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 2rem 1.5rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #444;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+    nav a:hover {
+      color: #000;
+    }
+    section {
+      padding: 2rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h2 {
+      margin-bottom: 1rem;
+    }
+    .project-video {
+      cursor: pointer;
+      display: inline-block;
+      margin: 1rem;
+    }
+    .project-video img {
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+    .project-video img:hover {
+      transform: scale(1.05);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    footer {
+      padding: 2rem 1rem;
+      color: #555;
+      margin-top: 3rem;
+    }
+    /* Video Lightbox */
+    #video-preview {
+      display:none;
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,0.8);
+      justify-content:center;
+      align-items:center;
+      z-index:1000;
+    }
+    #video-preview video {
+      max-width:90%;
+      max-height:90%;
+      border-radius:6px;
+    }
+    #close-video {
+      position:absolute;
+      top:20px;
+      right:20px;
+      font-size:24px;
+      color:white;
+      background:none;
+      border:none;
+      cursor:pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Reyhan Mohammed – Portfolio</h1>
+    <p>Digital Designer • Marketing • Tech & Creative Media</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#design">Design</a>
+    <a href="#voiceAct">Voice Acting</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi my name is Reyhan, I'm a digital designer and marketing professional born and raised in NYC. I work across graphic design, digital media, tech refurbishing, and branding. I love building visuals that feel clean and bold while also taking inspiration from works of decades past.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Highlights</h2>
+
+    <!-- Children's Book Illustration -->
+    <div class="project-video" data-video="videos/book_animation.mp4">
+      <img src="images/thumbnails/book_thumb.jpg" alt="Children's Book Illustration Thumbnail">
+      <h3>Children's Book Illustration – "Why Are We Moving?"</h3>
+      <p>Illustrations explaining gentrification for kids, focusing on warmth, clarity, and emotional expression.</p>
+    </div>
+
+    <!-- Retro Sony Mylo COM-1 Ad -->
+    <div class="project-video" data-video="videos/myloVideo.mp4">
+      <img src="images/thumbnails/myloThumb.png" alt="Retro Sony Mylo COM-1 Ad Thumbnail">
+      <h3>Retro Sony Mylo COM-1 Ad</h3>
+      <p>After Effects animation designed in a 4:3 retro aesthetic.</p>
+    </div>
+
+    <!-- Additional Video Thumbnail -->
+    <div class="project-video" data-video="videos/newVideo.mp4">
+      <img src="images/thumbnails/newVideoThumb.png" alt="New Project Thumbnail">
+      <h3>New Project Video</h3>
+      <p>This is an additional highlight video showcasing another project.</p>
+    </div>
+
+  </section>
+
+  <section id="design">
+    <h2>Design Gallery</h2>
+
+    <h3>Projects</h3>
+    <div class="gallery projects-gallery">
+      <a href="images/projects/book_illustration1.jpg"><img src="images/projects/book_illustration1.jpg" alt="Book Illustration 1"></a>
+      <a href="images/projects/book_illustration2.jpg"><img src="images/projects/book_illustration2.jpg" alt="Book Illustration 2"></a>
+      <a href="images/retro_ad/mylo_frame1.png"><img src="images/retro_ad/mylo_frame1.png" alt="Retro Ad Frame 1"></a>
+      <a href="images/graphics/poster1.jpg"><img src="images/graphics/poster1.jpg" alt="Poster 1"></a>
+    </div>
+
+    <h3>Illustrations</h3>
+    <div class="gallery illustrations-gallery">
+      <a href="images/illustrations/illustration1.png"><img src="images/illustrations/illustration1.png" alt="Illustration 1"></a>
+      <a href="images/illustrations/illustration2.png"><img src="images/illustrations/illustration2.png" alt="Illustration 2"></a>
+      <a href="images/illustrations/illustration3.png"><img src="images/illustrations/illustration3.png" alt="Illustration 3"></a>
+      <a href="images/illustrations/illustration4.png"><img src="images/illustrations/illustration4.png" alt="Illustration 4"></a>
+    </div>
+
+  </section>
+<section id="voiceAct">
+  <h2>Voice Acting Demo</h2>
+
+  <div class="project-video" data-video="videos/voice_demo.mp4">
+    <img src="images/thumbnails/voice_demo_thumb.png" alt="Voice Acting Demo Thumbnail">
+    <p>Listen to my voice acting work across various styles and characters.</p>
+  </div>
+</section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:reyhan.asgaralli.mohammed@gmail.com">reyhan.asgaralli.mohammed@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/reyhan-mohammed-3866a5353" target="_blank" rel="noopener">www.linkedin.com/in/reyhan-mohammed-3866a5353</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Reyhan Mohammed</p>
+  </footer>
+
+  <!-- Video Lightbox -->
+  <div id="video-preview">
+    <button id="close-video">×</button>
+    <video id="preview-video" controls></video>
+  </div>
+
+  <script>
+    // Video Lightbox Functionality
+    const videoPreview = document.getElementById('video-preview');
+    const previewVideo = document.getElementById('preview-video');
+    const closeVideo = document.getElementById('close-video');
+
+    document.querySelectorAll('.project-video').forEach(item => {
+      item.addEventListener('click', () => {
+        const videoSrc = item.getAttribute('data-video');
+        previewVideo.src = videoSrc;
+        videoPreview.style.display = 'flex';
+        previewVideo.play();
+      });
+    });
+
+    closeVideo.addEventListener('click', () => {
+      previewVideo.pause();
+      previewVideo.src = '';
+      videoPreview.style.display = 'none';
+    });
+
+    videoPreview.addEventListener('click', (e) => {
+      if (e.target === videoPreview) {
+        previewVideo.pause();
+        previewVideo.src = '';
+        videoPreview.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>
